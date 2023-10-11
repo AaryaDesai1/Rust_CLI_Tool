@@ -14,5 +14,11 @@ jobs:
           profile: minimal
           components: clippy, rustfmt
           override: true
+      - name: Format
+        run: make format
       - name: Run clippy
         run: make lint
+      - name: Test
+        run: make test
+      - name: Run
+        run: make run
