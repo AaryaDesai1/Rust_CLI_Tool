@@ -12,10 +12,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/checkout@v2
-      - name: Build and run
-        run: |
-          echo 10 | make run
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
@@ -28,5 +24,3 @@ jobs:
         run: make lint
       - name: Test
         run: make test
-      - name: Run
-        run: make run
