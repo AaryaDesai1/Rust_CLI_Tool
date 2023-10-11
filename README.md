@@ -25,6 +25,6 @@ aad64_command_line
 1. lib.rs: Has two functions, one which specifies the suits a card can have (`create_suit`) and the other that specifies it's values (`create_value`).
 2. main.rs: This file calls the functions written in lib.rs. It then asks the user for a command line input, which here, is the number of cards the user wants to return from a shuffled deck. The main function then goes on to shuffle the suits and values and then sip them together to create the user specified number of cards and returns them in the command line. The image below shows you an example of the same:
 
-<img width="500" alt="Screenshot 2023-10-11 at 4 29 11 PM" src="https://github.com/nogibjj/aad64_command_line/assets/143753050/95da4673-9f98-4b97-9a41-c07ae93f7b10">
+<img width="1000" alt="Screenshot 2023-10-11 at 4 29 11 PM" src="https://github.com/nogibjj/aad64_command_line/assets/143753050/95da4673-9f98-4b97-9a41-c07ae93f7b10">
 
 
