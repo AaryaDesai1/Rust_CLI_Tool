@@ -1,36 +1,46 @@
-use caeser_cipher_cli::{decrypt, encrypt};
 use clap::Parser;
+use make_card::create_suit;
+use make_card::create_value;
+use std::io;
 
-/// CLI tool to encrypt and decrypt messages using the caeser cipher
-#[derive(Parser, Debug)]
-#[command(author, version, about, long_about = None)]
-struct Args {
-    /// Encrypt the message
-    #[arg(short, long)]
-    encrypt: bool,
-
-    /// decrypt the message
-    #[arg(short, long)]
-    decrypt: bool,
-
-    /// The message to encrypt or decrypt
-    #[arg(short, long)]
-    message: String,
-
-    /// The shift to use for the cipher
-    /// Must be between 1 and 25, the default is 3
-    #[arg(short, long, default_value = "3")]
-    shift: u8,
+#[derive(Parser)]
+#[clap(
+    version = "1.0",
+    author = "Your Name <your.email@example.com>",
+    about = "Generate cards with a combination of suit and value"
+)]
+struct Opts {
+    #[clap(short, long)]
+    num_cards: Option<usize>, // Changed the field name to num_cards and made it optional
 }
 
-// run it
 fn main() {
-    let args = Args::parse();
-    if args.encrypt {
-        println!("{}", encrypt(&args.message, args.shift));
-    } else if args.decrypt {
-        println!("{}", decrypt(&args.message, args.shift));
-    } else {
-        println!("Please specify either --encrypt or --decrypt");
+    let opts: Opts = Opts::parse();
+
+    let num_cards: usize = match opts.num_cards {
+        Some(num) => num,
+        None => {
+            println!("Please enter the number of cards to generate:");
+            let mut input = String::new();
+            io::stdin().read_line(&mut input).unwrap();
+            input.trim().parse::<usize>().unwrap()
+        }
+    };
+
+    // Generate suits and values
+    let suits = create_suit(num_cards, true);
+    let values = create_value(num_cards, true);
+
+    // Combine suits and values to create cards
+    let cards: Vec<String> = suits
+        .into_iter()
+        .zip(values)
+        .map(|(s, v)| format!("{} {}", v, s))
+        .collect();
+
+    // Print the generated cards
+    println!("Generated cards:");
+    for card in cards {
+        println!("{}", card);
     }
 }

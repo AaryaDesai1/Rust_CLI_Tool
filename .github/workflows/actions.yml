@@ -16,9 +16,11 @@ jobs:
           override: true
       - name: Format
         run: make format
-      - name: Run clippy
+      - name: Lint
         run: make lint
       - name: Test
         run: make test
       - name: Run
         run: make run
+
+#put binary somewhere
