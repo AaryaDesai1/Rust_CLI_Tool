@@ -1,6 +1,10 @@
 name: Clippy
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   build:
@@ -22,5 +26,3 @@ jobs:
         run: make test
       - name: Run
         run: make run
-
-#put binary somewhere
