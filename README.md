@@ -6,7 +6,7 @@ Package a Rust Script into a Command-Line Tool
 This week's mini project was an introduction to coding in Rust (specifically a Rust CLI project). For the same, I created a project that shuffled through cards and retrieved the number of cards the user specified in the command line. Below are more details of the same.
 
 ### Contents:
-
+```
 aad64_command_line/
 ├── .github/
 │   └── workflows/actions.yml
@@ -17,6 +17,7 @@ aad64_command_line/
 ├── Cargo.toml
 ├── Makefile
 └── README.md
+```
 
 ### [actions.yml](https://github.com/nogibjj/aad64_command_line/actions/workflows/actions.yml)
 This is a GitHub Actions workflow file named `Clippy`:
