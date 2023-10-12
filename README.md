@@ -9,7 +9,7 @@ This week's mini project was an introduction to coding in Rust (specifically a R
 
 aad64_command_line/
 ├── .github/
-│   └── workflows/[actions.yml](https://github.com/nogibjj/aad64_command_line/actions/workflows/actions.yml)
+│   └── workflows/ [actions.yml](https://github.com/nogibjj/aad64_command_line/actions/workflows/actions.yml)
 ├── .gitignore
 ├── src/
 │   ├── [lib.rs](https://github.com/nogibjj/aad64_command_line/src/lib.rs)
