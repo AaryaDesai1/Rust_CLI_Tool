@@ -9,16 +9,20 @@ This week's mini project was an introduction to coding in Rust (specifically a R
 
 aad64_command_line/
 ├── .github/
-│   └── workflows/ [actions.yml](https://github.com/nogibjj/aad64_command_line/actions/workflows/actions.yml)
+│   └── workflows/actions.yml
 ├── .gitignore
 ├── src/
-│   ├── [lib.rs](https://github.com/nogibjj/aad64_command_line/src/lib.rs)
-│   └── [main.rs](https://github.com/nogibjj/aad64_command_line/src/main.rs)
-├── [Cargo.toml](https://github.com/nogibjj/aad64_command_line/Cargo.toml)
-├── [Makefile](https://github.com/nogibjj/aad64_command_line/Makefile)
+│   ├── lib.rs
+│   └── main.rs
+├── Cargo.toml
+├── Makefile
 └── README.md
 
-
+[actions.yml](https://github.com/nogibjj/aad64_command_line/actions/workflows/actions.yml)
+[lib.rs](https://github.com/nogibjj/aad64_command_line/src/lib.rs)
+[main.rs](https://github.com/nogibjj/aad64_command_line/src/main.rs)
+[Cargo.toml](https://github.com/nogibjj/aad64_command_line/Cargo.toml)
+[Makefile](https://github.com/nogibjj/aad64_command_line/Makefile)
 ### src Folder:
 1. lib.rs: Has two functions, one which specifies the suits a card can have (`create_suit`) and the other that specifies it's values (`create_value`).
 2. main.rs: This file calls the functions written in lib.rs. It then asks the user for a command line input, which here, is the number of cards the user wants to return from a shuffled deck. The main function then goes on to shuffle the suits and values and then sip them together to create the user specified number of cards and returns them in the command line. The image below shows you an example of the same:
