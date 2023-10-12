@@ -5,20 +5,18 @@ Package a Rust Script into a Command-Line Tool
 ## Summary:
 This week's mini project was an introduction to coding in Rust (specifically a Rust CLI project). For the same, I created a project that shuffled through cards and retrieved the number of cards the user specified in the command line. Below are more details of the same.
 
-## Contents: 
-aad64_command_line
-    |
-    ├── .github
-    |     ├── workflows
-    |     |      └── [actions.yml](https://github.com/nogibjj/aad64_command_line/actions/workflows/actions.yml)
-    |
-    ├── src
-    |     ├── [lib.rs](https://github.com/nogibjj/aad64_command_line/src/lib.rs)
-    |     └── [main.rs](https://github.com/nogibjj/aad64_command_line/src/main.rs)
-    |
-    ├── [Cargo.toml](https://github.com/nogibjj/aad64_command_line/Cargo.toml)
-    |
-    └── [Makefile](https://github.com/nogibjj/aad64_command_line/Makefile)
+### Contents:
+
+aad64_command_line/
+├── .github/
+│   └── workflows/[actions.yml](https://github.com/nogibjj/aad64_command_line/actions/workflows/actions.yml)
+├── .gitignore
+├── src/
+│   ├── [lib.rs](https://github.com/nogibjj/aad64_command_line/src/lib.rs)
+│   └── [main.rs](https://github.com/nogibjj/aad64_command_line/src/main.rs)
+├── [Cargo.toml](https://github.com/nogibjj/aad64_command_line/Cargo.toml)
+├── [Makefile](https://github.com/nogibjj/aad64_command_line/Makefile)
+└── README.md
 
 
 ### src Folder:
