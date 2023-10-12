@@ -19,7 +19,7 @@ aad64_command_line/
 └── README.md
 ```
 
-### [actions.yml](https://github.com/nogibjj/aad64_command_line/actions/workflows/actions.yml)
+### 1. [actions.yml](https://github.com/nogibjj/aad64_command_line/actions/workflows/actions.yml)
 This is a GitHub Actions workflow file named `Clippy`:
 - **Name**: Clippy
 - **Triggers**: It is triggered on both push events to the `main` branch and pull requests.
@@ -36,17 +36,17 @@ This workflow automates the process of formatting, linting, and testing a Rust p
 As seen in the badge above, the project is passing the entire CI/CD build without any errors. Below is also a screenshot of the project passing the test function written in `lib.rs`.
 <p align = 'center'><img width="837" alt="Screenshot 2023-10-11 at 4 26 29 PM" src="https://github.com/nogibjj/aad64_command_line/assets/143753050/5317cfaf-9df7-4e1d-884c-43d9f0a55e21"></p>
 
-### src Folder:
+### 2. src Folder:
 1. __[lib.rs](https://github.com/nogibjj/aad64_command_line/src/lib.rs)__: Has two functions, one which specifies the suits a card can have (`create_suit`) and the other that specifies it's values (`create_value`).
 2. __[main.rs](https://github.com/nogibjj/aad64_command_line/src/main.rs)__: This file calls the functions written in lib.rs. It then asks the user for a command line input, which here, is the number of cards the user wants to return from a shuffled deck. The main function then goes on to shuffle the suits and values and then sip them together to create the user specified number of cards and returns them in the command line. The image below shows you an example of the same:
 
 <img width="1000" alt="Screenshot 2023-10-11 at 4 29 11 PM" src="https://github.com/nogibjj/aad64_command_line/assets/143753050/95da4673-9f98-4b97-9a41-c07ae93f7b10">
 
 
-### [Cargo.toml](https://github.com/nogibjj/aad64_command_line/Cargo.toml)
+### 3. [Cargo.toml](https://github.com/nogibjj/aad64_command_line/Cargo.toml)
 This file is the `Cargo.toml` manifest for a Rust project named `cli-customize-cards` with dependencies on `clap`, `csv`, and `rand` libraries. It specifies the project version, edition, and library configuration.
 
-### [Makefile](https://github.com/nogibjj/aad64_command_line/Makefile)
+### 4. [Makefile](https://github.com/nogibjj/aad64_command_line/Makefile)
 This is a `Makefile` used for automating various tasks in a Rust project:
 - `format`: Invokes `cargo fmt` to automatically format the code according to Rust style guidelines.
 - `lint`: Executes `cargo clippy` to perform linting and static analysis to catch potential issues or non-idiomatic code.
