@@ -1,5 +1,4 @@
-# aad64_command_line
-Package a Rust Script into a Command-Line Tool
+# Rust Script Command-Line Tool with Testing
 [![Clippy](https://github.com/nogibjj/aad64_command_line/actions/workflows/actions.yml/badge.svg)](https://github.com/nogibjj/aad64_command_line/actions/workflows/actions.yml)
 
 ## Summary:
