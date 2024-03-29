@@ -6,7 +6,7 @@ This week's mini project was an introduction to coding in Rust (specifically a R
 
 ### Contents:
 ```
-aad64_command_line/
+Rust_CLI_Tool/
 ├── .github/
 │   └── workflows/actions.yml
 ├── .gitignore
